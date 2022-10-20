@@ -469,7 +469,7 @@ section {
 
     >.ex-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
 
         .ex-navbar {
@@ -850,5 +850,31 @@ section.ex-about {
             background-color: $ex-primary;
             transition: $ex-transition;
         }
+    }
+}
+
+/* Scroll to top */
+
+.ex-scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0; 
+    transition: all .2s ease-in-out;
+
+    .ex-scroll-icon{
+        padding: 10px;
+        border-radius: 50%;
+        background: $ex-secondary;
+        color: $ex-white;
+
+        &:is(:hover, :focus){
+            box-shadow: 1px 1px 30px $ex-primary;
+        }
+    }
+
+    &.ex-show-scroll-to-top {
+        opacity: 1;
+        transition: all .2s ease-in-out;
     }
 }
