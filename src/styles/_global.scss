@@ -1,0 +1,211 @@
+@import './colors';
+@import './other';
+@import './typography';
+
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+span,
+img,
+data,
+time,
+input,
+button {
+    display: block
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+html {
+    font-family: 'Be Vietnam Pro';
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-block-start: 72px;
+    background: $ex-white;
+}
+
+:focus-visible {
+    outline: 2px solid $ex-gray-3;
+    outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%)
+}
+
+
+/* TOUS LES ELEMENTS SERONT PREFIXE DE ex */
+
+/* REFUSED STYLES */
+
+.ex-container{
+    padding-inline: 10px;
+
+    @media (min-width: 990px){
+        padding-inline: 100px;
+    }
+}
+
+.ex-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 992px){
+        flex-direction: row;
+    }
+}
+
+.ex-col-1{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 8.33333333333%;
+    }
+}
+
+.ex-col-2{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 16.66%;
+    }
+}
+
+.ex-col-3{
+    width: 100%;
+    padding-inline: 10px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 25%;
+    }
+}
+
+.ex-col-4{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 33.33%;
+    }
+}
+
+.ex-col-5{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 41.66%;
+    }
+}
+
+.ex-col-6{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 50%;
+    }
+}
+
+.ex-col-7{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 58.33%;
+    }
+}
+
+.ex-col-8{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 66.66%;
+    }
+}
+
+.ex-col-9{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 75%;
+    }
+}
+
+.ex-col-10{
+    width: 83.33%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 8.33333333333%;
+    }
+}
+
+.ex-col-11{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 91.66%;
+    }
+}
+
+.ex-col-12{
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+
+    @media (min-width: 992px){
+        width: 100%;
+    }
+}
