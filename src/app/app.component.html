@@ -2,7 +2,7 @@
     <div class="ex-container">
         <!--Logo-->
         <h2 class="h2">
-            <a href="#" class="ex-logo">Exosdia</a>
+            <a href="#" class="ex-logo">Exodia</a>
         </h2>
 
         <!--Toggle button for mobile view-->
@@ -19,16 +19,16 @@
             <div class="ex-container">
                 <ul class="ex-navbar-list">
                     <li>
-                        <a href="#ex-about" class="ex-navbar-link active">about</a>
+                        <a href="#ex-about" class="ex-navbar-link active" (click)="ex_toggle_nav()">about</a>
                     </li>
                     <li>
-                        <a href="#ex-service" class="ex-navbar-link">services</a>
+                        <a href="#ex-service" class="ex-navbar-link" (click)="ex_toggle_nav()">services</a>
                     </li>
                     <li>
-                        <a href="#ex-product" class="ex-navbar-link">product</a>
+                        <a href="#ex-product" class="ex-navbar-link" (click)="ex_toggle_nav()">product</a>
                     </li>
                     <li>
-                        <a href="#ex-contact" class="ex-navbar-link">contacts</a>
+                        <a href="#ex-contact" class="ex-navbar-link" (click)="ex_toggle_nav()">contacts</a>
                     </li>
                 </ul>
             </div>
@@ -117,7 +117,8 @@
             </div>
 
             <div class="ex-col-6">
-                <img src="./../assets/images/img1.jpeg" alt="Image 1" class="ex-img-fluid">
+                <img src="./../assets/images/img1.jpeg" alt="Image 1" class="ex-img-fluid" data-aos="zoom-in"
+                    data-aos-delay="300">
             </div>
         </div>
     </div>
@@ -161,7 +162,8 @@
             </div>
 
             <div class="ex-col-4">
-                <img src="./../assets/images/img1.jpeg" class="ex-img-fluid" alt="Images">
+                <img src="./../assets/images/img1.jpeg" class="ex-img-fluid" alt="Images" class="ex-img-fluid"
+                    data-aos="zoom-in" data-aos-delay="300">
             </div>
         </div>
     </div>
@@ -490,7 +492,7 @@
                 </p>
             </div>
             <div class="ex-col-2 ex-about">
-                <h2 class="ex-h2 ex-uppercase">About exsodia</h2>
+                <h2 class="ex-h2 ex-uppercase">About exodia</h2>
                 <ul class="ex-list">
                     <li>
                         <a href="#" class="ex-list-item ex-uppercase">compagny</a>

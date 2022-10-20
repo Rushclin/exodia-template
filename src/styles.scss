@@ -97,8 +97,10 @@ button {
     cursor: pointer;
 }
 
-section {
-    padding-block: 50px;
+section:not(section.ex-hero) {
+    .ex-container{
+       padding-block: 50px;
+    } 
 }
 
 :focus-visible {
@@ -350,8 +352,11 @@ section {
 }
 
 .ex-text-justify {
-    padding-right: 10px;
     text-align: justify;
+
+    @media (min-width: 992px){
+        padding-right: 10px;
+    }
 }
 
 .ex-btn-list {
