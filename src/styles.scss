@@ -1,11 +1,32 @@
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+/* 
+/*
+/*          ********    ***   ***    ****     ****     **     ***
+/*          ********     **   **    **  **    ** **    **    ** **
+/*          **            ** **     **  **    ** **    **    ** **
+/*          ******         **       **  **    ** **    **    ** **
+/*          **           ** **      **  **    ** **    **    ** **
+/*          ********    **   **     **  **    ** **    **    ***** 
+/*          ********   ***   ***     ****     ****     **    ** **
+/*                              
+/*                              Copyright 2022
+/*
+*/
 
-/* ALL CSS POPERTIES */
 
+/*************************\
+*
+* IMPORT CSS FOR CAROUSEL 
+*
+\*************************/
 
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
-/* COLORS */
+/*************************\
+*
+*      CSS VARIABLES 
+*
+\*************************/
 
 $ex-secondary: #1C67A9;
 $ex-primary: #603F91;
@@ -16,8 +37,6 @@ $ex-gray-2: #384A56;
 $ex-gray-3: #132028;
 $ex-violet: #6A48A6;
 $ex-secondary-thin: #CCE7E5;
-
-/* TYPOGRAPHY */
 
 $ex-fs-1: 1.563rem;
 $ex-fs-2: 1.5rem;
@@ -33,25 +52,22 @@ $ex-fs-10: 0.769rem;
 $ex-fw-500: 500;
 $ex-fw-600: 600;
 
-
-/* TRANSITIONS */
-
 $ex-transition: 0.25s ease;
 $ex-cubic-out: cubic-bezier(0.45, 0.85, 0.5, 1);
 $ex-cubic-in: cubic-bezier(0.5, 0, 0.50, 0.95);
-
-
-/* SHADOWS */
 
 $ex-shadow-1: 0 12px 20px hsla(210, 10%, 23%, 0.07);
 $ex-shadow-2: 0 2px 10px hsla(0, 0%, 0%, 0.04);
 $ex-shadow-3: 0 2px 20px $ex-gray-1;
 
-
-/* RADIUS */
-
 $ex-radius: 6px;
 
+
+/*************************\
+*
+*     REINITIALISATION 
+*
+\*************************/
 
 *,
 *::before,
@@ -97,12 +113,6 @@ button {
     cursor: pointer;
 }
 
-section:not(section.ex-hero) {
-    .ex-container{
-       padding-block: 50px;
-    } 
-}
-
 :focus-visible {
     outline: 2px solid $ex-gray-3;
     outline-offset: 1px;
@@ -124,6 +134,12 @@ section:not(section.ex-hero) {
     background: hsl(0, 0%, 70%)
 }
 
+
+/*************************\
+*
+*      ELEMENTS STYLES 
+*
+\*************************/
 
 .ex-bg-primary {
     background: $ex-primary;
@@ -150,17 +166,34 @@ section:not(section.ex-hero) {
     color: $ex-primary;
 }
 
-.ex-fw-light{
-    font-weight: 300;
-    font-size: $ex-fs-8;
-}
-
 .ex-color-secondary{
     color: $ex-secondary;
 }
 
+.ex-text-light{
+    font-weight: 300;
+    font-size: $ex-fs-8;
+}
+
+.ex-text-bold {
+    font-weight: $ex-fw-600;
+}
+
 .ex-text-center{
     text-align: center;
+}
+
+.ex-text-large {
+    font-size: $ex-fs-1;
+}
+
+.ex-text-small {
+    font-size: $ex-fs-9;
+    font-weight: $ex-fw-500;
+}
+
+.ex-text-uppercase {
+    text-transform: uppercase;
 }
 
 .ex-start-disc::before{
@@ -169,168 +202,10 @@ section:not(section.ex-hero) {
     font-size: 15px;
 }
 
-.ex-text-large {
-    font-size: $ex-fs-1;
-}
-
-.ex-text-bold {
-    font-weight: 700;
-}
-
-.ex-text-small {
-    font-size: $ex-fs-9;
-    font-weight: $ex-fw-500;
-}
-
-.ex-p-5 {
-    padding: 15px;
-}
-
-.ex-uppercase {
-    text-transform: uppercase;
-}
-
-.ex-row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    @media (min-width: 992px) {
-        flex-direction: row;
-    }
-}
-
-.ex-col-1 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 8.33333333333%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-2 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 16.66%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-3 {
-    width: 100%;
-    ;
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 25%;
-    padding-inline: 10px
-    }
-}
-
-.ex-col-4 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 33.33%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-5 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 41.66%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-6 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 50%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-7 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 58.33%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-8 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 66.66%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-9 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 75%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-10 {
-    width: 83.33%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 8.33333333333%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-11 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 91.66%;
-    padding-inline: 5px;
-    }
-}
-
-.ex-col-12 {
-    width: 100%;
-    
-    padding-block: 10px;
-
-    @media (min-width: 992px) {
-        width: 100%;
-    padding-inline: 5px;
-    }
+section:not(section.ex-hero) {
+    .ex-container{
+       padding-block: 50px;
+    } 
 }
 
 .ex-img-fluid {
@@ -338,10 +213,13 @@ section:not(section.ex-hero) {
     height: auto;
 }
 
+.ex-p-5 {
+    padding: 15px;
+}
+
 .ex-mt-5 {
     margin-top: 20px;
 }
-
 
 .ex-mt-3 {
     margin-top: 10px;
@@ -358,6 +236,20 @@ section:not(section.ex-hero) {
         padding-right: 10px;
     }
 }
+
+.ex-text-center {
+    text-align: center
+}
+
+.ex-text-primary {
+    color: $ex-primary;
+}
+
+/*************************\
+*
+*      BUTTON DESIGN 
+*
+\*************************/
 
 .ex-btn-list {
     display: flex;
@@ -402,13 +294,11 @@ section:not(section.ex-hero) {
     }
 }
 
-.ex-text-center {
-    text-align: center
-}
-
-.ex-text-primary {
-    color: $ex-primary;
-}
+/*************************\
+*
+*    RESPONSIVE DESIGN 
+*
+\*************************/
 
 .ex-container {
     padding-inline: 20px;
@@ -418,23 +308,142 @@ section:not(section.ex-hero) {
     }
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    color: $ex-gray-3;
-    font-weight: $ex-fw-600;
+.ex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
 }
 
-.h2 {
-    font-size: $ex-fs-2;
+.ex-col-1 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 8.33333333333%;
+        padding-inline: 5px;
+    }
 }
 
+.ex-col-2 {
+    width: 100%;
+    padding-block: 10px;
 
+    @media (min-width: 992px) {
+        width: 16.66%;
+        padding-inline: 5px;
+    }
+}
 
-/* HEADER */
+.ex-col-3 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 25%;
+        padding-inline: 10px;
+    }
+}
+
+.ex-col-4 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 33.33%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-5 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 41.66%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-6 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 50%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-7 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 58.33%;
+    padding-inline: 5px;
+    }
+}
+
+.ex-col-8 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 66.66%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-9 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 75%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-10 {
+    width: 83.33%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 8.33333333333%;
+        padding-inline: 5px;
+    }
+}
+
+.ex-col-11 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 91.66%;
+    padding-inline: 5px;
+    }
+}
+
+.ex-col-12 {
+    width: 100%;
+    padding-block: 10px;
+
+    @media (min-width: 992px) {
+        width: 100%;
+        padding-inline: 5px;
+    }
+}
+
+/*************************\
+*
+*    HEDAER DESIGN 
+*
+\*************************/
 
 .ex-header {
     width: 100%;
@@ -484,11 +493,9 @@ section:not(section.ex-hero) {
             left: 0;
             right: 0;
             opacity: 1;
-            /* visibility: hidden;  */
             transition: 0.5s $ex-cubic-out;
 
             .ex-navbar-list {
-                /*  padding-inline: 15px; */
                 margin-bottom: 15px;
 
                 .ex-navbar-link {
@@ -538,8 +545,6 @@ section:not(section.ex-hero) {
         cursor: pointer;
     }
 
-    /* MEDIA SCREEN */
-
     @media (min-width: 992px) {
 
         &.active {
@@ -547,7 +552,6 @@ section:not(section.ex-hero) {
         }
 
         >.ex-container {
-            /*  padding-inline: 75px; */
 
             .ex-navbar {
                 flex-grow: 1;
@@ -577,7 +581,11 @@ section:not(section.ex-hero) {
     }
 }
 
-/* FOOTER */
+/*************************\
+*
+*      FOOTER DESIGN 
+*
+\*************************/
 
 .ex-footer {
     padding-block: 20px;
@@ -638,12 +646,13 @@ section:not(section.ex-hero) {
     }
 }
 
-/* HERO SECTION */
+/*************************\
+*
+*      HERO SECTION 
+*
+\*************************/
 
 .ex-hero {
-   /*  height: 80vh;
-    width: 100%; */
-
     position: relative;
     padding: 5rem 0;
     overflow: hidden;
@@ -663,6 +672,7 @@ section:not(section.ex-hero) {
     }
 
     .ex-hero-contact{
+
         .ex-btn{
             border: solid 1px $ex-secondary;
             margin: 10px 0;
@@ -673,7 +683,7 @@ section:not(section.ex-hero) {
             }
 
             &:is(:hover, :focus){
-                background: $ex-secondary;
+                background-color: $ex-secondary;
             }
         }
     }
@@ -687,36 +697,21 @@ section:not(section.ex-hero) {
         top: 1em;
     }
 
-    /* .ex-box{
-        width: 700px;
-        position: absolute;
-        left: -50px;
-        top: -10px;
-        height: 700px;
-        transform: rotate(45deg);
-        background-color: $ex-primary;
-    } */
-
     >.ex-container {
         color: $ex-white
     }
 }
 
-section.ex-about {
-    padding-block: 50px;
-
-    .ex-h2 {
-        padding-block: 20px;
-    }
-}
-
-/* GALLERY */
+/*************************\
+*
+*    GALLERY DESIGN 
+*
+\*************************/
 
 .ex-gallery{
     display: grid;
     grid-template-areas: 
     "a a a g g g g"
-   /*  "a a a g g g g" */
     "a a a c c d d"
     "a a a c c d d"
     "e e e c c f f"
@@ -726,25 +721,26 @@ section.ex-about {
     .ex-gallery-element:nth-child(1){
         grid-area: a;
     }
- /*    .ex-gallery-element:nth-child(2){
-        grid-area: b;
-    } */
+
     .ex-gallery-element:nth-child(2){
         grid-area: c;
     }
+
     .ex-gallery-element:nth-child(3){
         grid-area: d;
     }
+
     .ex-gallery-element:nth-child(4){
         grid-area: e;
     }
+
     .ex-gallery-element:nth-child(5){
         grid-area: f;
     }
+
     .ex-gallery-element:nth-child(6){
         grid-area: g;
     }
-
 
     img{
         width: 100%; 
@@ -754,8 +750,11 @@ section.ex-about {
     }
 }
 
-
-/* CAROUSSEL */
+/*************************\
+*
+*   CAROUSEL DESIGN 
+*
+\*************************/
 
 .ex-carousel{
     z-index: 0;
@@ -766,7 +765,7 @@ section.ex-about {
         &:is(:hover, :focus){
             background-color: $ex-secondary;
             transition: $ex-transition;
-            border-radius: 6px;
+            border-radius: $ex-radius;
 
             .ex-carousel-description{
                 color: $ex-white;
@@ -779,7 +778,7 @@ section.ex-about {
         }
 
         img{
-            border-radius: 6px;
+            border-radius: $ex-radius;
             height: 400px; 
             object-fit: cover;
             opacity: 0.5;
@@ -821,9 +820,10 @@ section.ex-about {
     }
 }
 
+
 .ex-card{
     padding: 20px 10px;
-    border-radius: 6px;
+    border-radius: $ex-radius;
     background: $ex-white;
     color: $ex-gray-3;
     transition: $ex-transition;
@@ -858,7 +858,11 @@ section.ex-about {
     }
 }
 
-/* Scroll to top */
+/*************************\
+*
+*      SCROLL TO TOP
+*
+\*************************/
 
 .ex-scroll-to-top {
     position: fixed;
@@ -866,6 +870,7 @@ section.ex-about {
     right: 15px;
     opacity: 0; 
     transition: all .2s ease-in-out;
+    z-index: 10;
 
     .ex-scroll-icon{
         padding: 10px;
