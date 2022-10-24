@@ -345,7 +345,7 @@ section:not(section.ex-hero) {
 
     @media (min-width: 992px) {
         width: 25%;
-        padding-inline: 10px;
+        padding-inline: 5px;
     }
 }
 
@@ -588,7 +588,7 @@ section:not(section.ex-hero) {
 \*************************/
 
 .ex-footer {
-    padding-block: 20px;
+    padding-block: 50px;
     color: $ex-white;
 
     .ex-h2 {
