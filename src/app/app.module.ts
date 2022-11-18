@@ -5,16 +5,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { TabsModule } from './layout/tabs';
+import { ScroolComponent } from './layout/scrool/scrool.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    FooterComponent,
+    ScroolComponent,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    TabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

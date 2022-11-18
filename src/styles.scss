@@ -1,13 +1,13 @@
-/* 
+/*
 /*
 /*          ********    ***   ***    ****     ****     **     ***
 /*          ********     **   **    **  **    ** **    **    ** **
 /*          **            ** **     **  **    ** **    **    ** **
 /*          ******         **       **  **    ** **    **    ** **
 /*          **           ** **      **  **    ** **    **    ** **
-/*          ********    **   **     **  **    ** **    **    ***** 
+/*          ********    **   **     **  **    ** **    **    *****
 /*          ********   ***   ***     ****     ****     **    ** **
-/*                              
+/*
 /*                              Copyright 2022
 /*
 */
@@ -15,7 +15,7 @@
 
 /*************************\
 *
-* IMPORT CSS FOR CAROUSEL 
+* IMPORT CSS FOR CAROUSEL
 *
 \*************************/
 
@@ -24,7 +24,7 @@
 
 /*************************\
 *
-*      CSS VARIABLES 
+*      CSS VARIABLES
 *
 \*************************/
 
@@ -65,7 +65,7 @@ $ex-radius: 6px;
 
 /*************************\
 *
-*     REINITIALISATION 
+*     REINITIALISATION
 *
 \*************************/
 
@@ -137,7 +137,7 @@ button {
 
 /*************************\
 *
-*      ELEMENTS STYLES 
+*      ELEMENTS STYLES
 *
 \*************************/
 
@@ -205,7 +205,7 @@ button {
 section:not(section.ex-hero) {
     .ex-container{
        padding-block: 50px;
-    } 
+    }
 }
 
 .ex-img-fluid {
@@ -247,7 +247,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*      BUTTON DESIGN 
+*      BUTTON DESIGN
 *
 \*************************/
 
@@ -296,7 +296,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*    RESPONSIVE DESIGN 
+*    RESPONSIVE DESIGN
 *
 \*************************/
 
@@ -441,7 +441,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*    HEDAER DESIGN 
+*    HEDAER DESIGN
 *
 \*************************/
 
@@ -483,7 +483,7 @@ section:not(section.ex-hero) {
 
     >.ex-container {
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
 
         .ex-navbar {
@@ -583,7 +583,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*      FOOTER DESIGN 
+*      FOOTER DESIGN
 *
 \*************************/
 
@@ -648,7 +648,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*      HERO SECTION 
+*      HERO SECTION
 *
 \*************************/
 
@@ -704,13 +704,13 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*    GALLERY DESIGN 
+*    GALLERY DESIGN
 *
 \*************************/
 
 .ex-gallery{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "a a a g g g g"
     "a a a c c d d"
     "a a a c c d d"
@@ -743,7 +743,7 @@ section:not(section.ex-hero) {
     }
 
     img{
-        width: 100%; 
+        width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 15px;
@@ -752,7 +752,7 @@ section:not(section.ex-hero) {
 
 /*************************\
 *
-*   CAROUSEL DESIGN 
+*   CAROUSEL DESIGN
 *
 \*************************/
 
@@ -779,7 +779,7 @@ section:not(section.ex-hero) {
 
         img{
             border-radius: $ex-radius;
-            height: 400px; 
+            height: 400px;
             object-fit: cover;
             opacity: 0.5;
         }
@@ -798,7 +798,7 @@ section:not(section.ex-hero) {
             right: 0;
             left: 0;
             width: 100%;
-            padding: 32px;   
+            padding: 32px;
         }
 
         .ex-carousel-icon{
@@ -868,7 +868,7 @@ section:not(section.ex-hero) {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    opacity: 0; 
+    opacity: 0;
     transition: all .2s ease-in-out;
     z-index: 10;
 
@@ -887,4 +887,9 @@ section:not(section.ex-hero) {
         opacity: 1;
         transition: all .2s ease-in-out;
     }
+}
+
+/***LAST ELEMENTS**/
+section{
+  padding-top: 50px;
 }

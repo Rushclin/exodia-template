@@ -1,538 +1,528 @@
 <app-navbar></app-navbar>
-<!--Scroll to top-->
-
-<div class="ex-scroll-to-top" [ngClass]="{'ex-show-scroll-to-top': windowScrolled}">
-    <a href="#">
-        <i class="fas fa-chevron-up ex-scroll-icon"></i>
-    </a>
-</div>
-
-<!--HERO SECTION-->
+<app-scrool></app-scrool>
 
 <section class="ex-hero ex-hero-bg ex-bg-secondary">
-    <div class="ex-container">
-        <div class="ex-row">
-            <div class="ex-col-6">
-                <div class="ex-hero-text">
-                    <h1 class="ex-h1" data-aos="fade-up">Exodia</h1>
-                    <p class="ex-hero-subtitle" data-aos="fade-up" data-aos-delay="100">We are commited to bring
-                        cutting-edge <br>
-                        AI into real-life application.
-                    </p>
-                </div>
-
-                <div class="ex-d-block ex-hero-contact">
-                    <a href="#" class="ex-btn" data-aos="fade-up" data-aos-delay="150">Contact us
-                        <i class="fa fa-phone-alt ex-icon"></i>
-                    </a>
-                    <p class="ex-hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                        +237 690139627
-                    </p>
-                </div>
-            </div>
-
-            <div class="ex-col-6">
-                <div class="ex-hero-image" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./../assets/images/hero-img.png" class="ex-img-fluid" alt="">
-                </div>
-            </div>
+  <div class="ex-container">
+    <div class="ex-row">
+      <div class="ex-col-6">
+        <div class="ex-hero-text">
+          <h1 class="ex-h1" data-aos="fade-up">Exodia</h1>
+          <p class="ex-hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+            We are commited to bring cutting-edge <br />
+            AI into real-life application.
+          </p>
         </div>
 
+        <div class="ex-d-block ex-hero-contact">
+          <a href="#" class="ex-btn" data-aos="fade-up" data-aos-delay="150"
+            >Contact us
+            <i class="fa fa-phone-alt ex-icon"></i>
+          </a>
+          <p class="ex-hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            +237 690139627
+          </p>
+        </div>
+      </div>
+
+      <div class="ex-col-6">
+        <div class="ex-hero-image" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="./../assets/images/hero-img.png"
+            class="ex-img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!--Section about-->
 
-<section class="ex-about" id="ex-about">
-    <div class="ex-container">
-        <h2 class="ex-h2 ex-text-center ex-text-primary" data-aos="fade-up" data-aos-delay="300">About us</h2>
+<section class="ex-service" id="ex-about">
+  <div class="ex-container">
+    <h2
+      class="ex-h2 ex-text-center ex-text-primary"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      About us
+    </h2>
 
-        <div class="ex-btn-list" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="ex-btn ex-btn-primary active">Compagny</a>
-            <a href="#" class="ex-btn ex-btn-primary">Vision</a>
-            <a href="#" class="ex-btn ex-btn-primary">Value</a>
-            <a href="#" class="ex-btn ex-btn-primary">Teams</a>
-        </div>
-
+    <ngx-tabs>
+      <ngx-tab tabTitle="Compagny">
         <div class="ex-row ex-mt-5">
-            <div class="ex-col-6" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="ex-h2">Compagny</h2>
-                <p class="ex-mt-5 ex-text-justify ex-text-light">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    officiis vitae in quisquam pariatur sapiente aliquam unde non, deserunt modi reiciendis libero porro
-                    a quia?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    officiis vitae in quisquam pariatur sapiente aliquam unde non, deserunt modi reiciendis libero porro
-                    a quia?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    officiis vitae in quisquam pariatur sapiente aliquam unde non, deserunt modi reiciendis libero porro
-                    a quia?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    officiis vitae in quisquam pariatur sapiente aliquam unde non, deserunt modi reiciendis libero porro
-                    a quia?
-                </p>
-                <div class="ex-d-block ex-mt-5">
-                    <a href="#" class="ex-btn ex-btn-secondary">
-                        Lire plus
-                        <i class="fa fa-eye ex-mx-5"></i>
-                    </a>
-                </div>
+          <div class="ex-col-6" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="ex-h2">Compagny</h2>
+            <p class="ex-mt-5 ex-text-justify ex-text-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+              excepturi voluptas ad officiis vitae in quisquam pariatur sapiente
+              aliquam unde non, deserunt modi reiciendis libero porro a quia? Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+              excepturi voluptas ad officiis vitae in quisquam pariatur sapiente
+              aliquam unde non, deserunt modi reiciendis libero porro a quia? Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+              excepturi voluptas ad officiis vitae in quisquam pariatur sapiente
+              aliquam unde non, deserunt modi reiciendis libero porro a quia? Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+              excepturi voluptas ad officiis vitae in quisquam pariatur sapiente
+              aliquam unde non, deserunt modi reiciendis libero porro a quia?
+            </p>
+            <div class="ex-d-block ex-mt-5">
+              <a href="#" class="ex-btn ex-btn-secondary">
+                Lire plus
+                <i class="fa fa-eye ex-mx-5"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="ex-col-6" data-aos="fade-up" data-aos-delay="400">
-                <img src="./../assets/images/img1.jpeg" alt="Image 1" class="ex-img-fluid">
-            </div>
+          <div class="ex-col-6" data-aos="fade-up" data-aos-delay="400">
+            <img
+              src="./../assets/images/img1.jpeg"
+              alt="Image 1"
+              class="ex-img-fluid"
+            />
+          </div>
         </div>
-    </div>
+      </ngx-tab>
+      <ngx-tab tabTitle="Vision">
+        <h1>On mets la vision ici</h1>
+      </ngx-tab>
+      <ngx-tab tabTitle="Value">
+        <h1>On nmets la plus value ici</h1>
+      </ngx-tab>
+      <ngx-tab tabTitle="Teams">
+        <h1>On mets l'equipe ici</h1>
+      </ngx-tab>
+    </ngx-tabs>
+  </div>
 </section>
 
 <!--Section service-->
-<section class="ex-service ex-bg-light ex-mt-5" id="ex-service">
-    <div class="ex-container">
-        <h2 class="ex-h2 ex-text-center ex-text-primary" data-aos="fade-up" data-aos-delay="200">
-            Services
-        </h2>
+<section class="ex-service ex-bg-light ex-mt-5" id="">
+  <div class="ex-container">
+    <h2
+      class="ex-h2 ex-text-center ex-text-primary"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      Services
+    </h2>
 
-        <div class="ex-btn-list" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="ex-btn ex-btn-primary active">Developpement et integration des services</a>
-            <a href="#" class="ex-btn ex-btn-primary">Gestion projet d'integration et TI</a>
-            <a href="#" class="ex-btn ex-btn-primary">Fiabilite et maintenance</a>
-        </div>
-
-        <div class="ex-row ex-mt-5">
-            <div class="ex-col-8" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="ex-h2">Developpement et integration technologique</h2>
-                <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">Developpement et integration technologique
-                </h5>
-
-                <p class="ex-text-light ex-text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit voluptas temporibus quo odit
-                    eaque et commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum repudiandae expedita
-                    laboriosam non.
-                </p>
-
-                <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">Developpement et integration technologique
-                </h5>
-
-                <p class="ex-text-light ex-text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit voluptas temporibus quo odit
-                    eaque et commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum repudiandae expedita
-                    laboriosam non.
-                </p>
-            </div>
-
-            <div class="ex-col-4" data-aos="fade-up" data-aos-delay="400">
-                <img src="./../assets/images/img1.jpeg" class="ex-img-fluid" alt="Images" class="ex-img-fluid">
-            </div>
-        </div>
+    <div class="ex-btn-list" data-aos="fade-up" data-aos-delay="300">
+      <a href="#" class="ex-btn ex-btn-primary active"
+        >Developpement et integration des services</a
+      >
+      <a href="#" class="ex-btn ex-btn-primary"
+        >Gestion projet d'integration et TI</a
+      >
+      <a href="#" class="ex-btn ex-btn-primary">Fiabilite et maintenance</a>
     </div>
+
+    <div class="ex-row ex-mt-5">
+      <div class="ex-col-8" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="ex-h2">Developpement et integration technologique</h2>
+        <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">
+          Developpement et integration technologique
+        </h5>
+
+        <p class="ex-text-light ex-text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+          excepturi voluptas ad Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eligendi sit voluptas temporibus quo odit eaque et
+          commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum
+          repudiandae expedita laboriosam non.
+        </p>
+
+        <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">
+          Developpement et integration technologique
+        </h5>
+
+        <p class="ex-text-light ex-text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+          excepturi voluptas ad Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eligendi sit voluptas temporibus quo odit eaque et
+          commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum
+          repudiandae expedita laboriosam non.
+        </p>
+      </div>
+
+      <div class="ex-col-4" data-aos="fade-up" data-aos-delay="400">
+        <img
+          src="./../assets/images/img1.jpeg"
+          class="ex-img-fluid"
+          alt="Images"
+          class="ex-img-fluid"
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--Services en cards-->
 
 <section class="ex-service-card ex-bg-dark">
-    <div class="ex-container">
-        <div class="ex-row">
-            <div class="ex-col-6" data-aos="fade-up" data-aos-delay="200">
-                <h5 class="ex-h5 ex-text-light">Our services</h5>
-                <h2 class="ex-h2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam unde asperiores.
-                </h2>
-            </div>
-            <div class="ex-col-6" data-aos="fade-up" data-aos-delay="250">
-                <small class="ex-text-justify ex-text-light">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum recusandae illum quis odit
-                    molestiae, laboriosam ipsum voluptates. Magni placeat quo accusamus, distinctio ipsa quod maxime
-                    possimus exercitationem dolor, laudantium fugit?
-                </small>
-            </div>
-        </div>
-        <div class="ex-row ex-mt-5" data-aos="fade-up" data-aos-delay="350">
-            <div class="ex-col-3">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./../assets/images/img10.jpg" alt="Une image" width="50" height="50">
-                    </div>
-
-                    <div class="ex-card-text ex-mt-5">
-                        <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
-                        <p class="ex-text-justify ex-mt-5 ex-text-light">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nulla illo. Voluptate odio
-                            eum veniam, impedit deserunt voluptatem nihil inventore ullam nesciunt recusandae ad alias?
-                            Ex beatae eum repellendus assumenda.
-                        </p>
-                        <div class="ex-d-block ex-text-center ex-mt-5">
-                            <a href="#" class="ex-btn">Lire plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ex-col-3">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./../assets/images/img3.jpg" alt="Une image" width="50" height="50">
-                    </div>
-
-                    <div class="ex-card-text ex-mt-5">
-                        <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
-                        <p class="ex-text-justify ex-mt-5 ex-text-light">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nulla illo. Voluptate odio
-                            eum veniam, impedit deserunt voluptatem nihil inventore ullam nesciunt recusandae ad alias?
-                            Ex beatae eum repellendus assumenda.
-                        </p>
-                        <div class="ex-d-block ex-text-center ex-mt-5">
-                            <a href="#" class="ex-btn">Lire plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ex-col-3">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./../assets/images/img7.jpg" alt="Une image" width="50" height="50">
-                    </div>
-
-                    <div class="ex-card-text ex-mt-5">
-                        <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
-                        <p class="ex-text-justify ex-mt-5 ex-text-light">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nulla illo. Voluptate odio
-                            eum veniam, impedit deserunt voluptatem nihil inventore ullam nesciunt recusandae ad alias?
-                            Ex beatae eum repellendus assumenda.
-                        </p>
-                        <div class="ex-d-block ex-text-center ex-mt-5">
-                            <a href="#" class="ex-btn">Lire plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ex-col-3">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./../assets/images/img5.jpg" alt="Une image" width="50" height="50">
-                    </div>
-
-                    <div class="ex-card-text ex-mt-5">
-                        <h5 class="ex-h5 ex-text-center">Transformation</h5>
-                        <p class="ex-text-justify ex-mt-5 ex-text-light">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nulla illo. Voluptate odio
-                            eum veniam, impedit deserunt voluptatem nihil inventore ullam nesciunt recusandae ad alias?
-                            Ex beatae eum repellendus assumenda.
-                        </p>
-                        <div class="ex-d-block ex-text-center ex-mt-5">
-                            <a href="#" class="ex-btn">Lire plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="ex-container">
+    <div class="ex-row">
+      <div class="ex-col-6" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="ex-h5 ex-text-light">Our services</h5>
+        <h2 class="ex-h2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam unde
+          asperiores.
+        </h2>
+      </div>
+      <div class="ex-col-6" data-aos="fade-up" data-aos-delay="250">
+        <small class="ex-text-justify ex-text-light">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+          recusandae illum quis odit molestiae, laboriosam ipsum voluptates.
+          Magni placeat quo accusamus, distinctio ipsa quod maxime possimus
+          exercitationem dolor, laudantium fugit?
+        </small>
+      </div>
     </div>
-</section>
+    <div class="ex-row ex-mt-5" data-aos="fade-up" data-aos-delay="350">
+      <div class="ex-col-3">
+        <div class="ex-card">
+          <div class="ex-card-image">
+            <img
+              src="./../assets/images/img10.jpg"
+              alt="Une image"
+              width="50"
+              height="50"
+            />
+          </div>
 
+          <div class="ex-card-text ex-mt-5">
+            <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
+            <p class="ex-text-justify ex-mt-5 ex-text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+              nulla illo. Voluptate odio eum veniam, impedit deserunt voluptatem
+              nihil inventore ullam nesciunt recusandae ad alias? Ex beatae eum
+              repellendus assumenda.
+            </p>
+            <div class="ex-d-block ex-text-center ex-mt-5">
+              <a href="#" class="ex-btn">Lire plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-col-3">
+        <div class="ex-card">
+          <div class="ex-card-image">
+            <img
+              src="./../assets/images/img3.jpg"
+              alt="Une image"
+              width="50"
+              height="50"
+            />
+          </div>
+
+          <div class="ex-card-text ex-mt-5">
+            <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
+            <p class="ex-text-justify ex-mt-5 ex-text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+              nulla illo. Voluptate odio eum veniam, impedit deserunt voluptatem
+              nihil inventore ullam nesciunt recusandae ad alias? Ex beatae eum
+              repellendus assumenda.
+            </p>
+            <div class="ex-d-block ex-text-center ex-mt-5">
+              <a href="#" class="ex-btn">Lire plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-col-3">
+        <div class="ex-card">
+          <div class="ex-card-image">
+            <img
+              src="./../assets/images/img7.jpg"
+              alt="Une image"
+              width="50"
+              height="50"
+            />
+          </div>
+
+          <div class="ex-card-text ex-mt-5">
+            <h5 class="ex-h5 ex-text-center">Un titre ici</h5>
+            <p class="ex-text-justify ex-mt-5 ex-text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+              nulla illo. Voluptate odio eum veniam, impedit deserunt voluptatem
+              nihil inventore ullam nesciunt recusandae ad alias? Ex beatae eum
+              repellendus assumenda.
+            </p>
+            <div class="ex-d-block ex-text-center ex-mt-5">
+              <a href="#" class="ex-btn">Lire plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ex-col-3">
+        <div class="ex-card">
+          <div class="ex-card-image">
+            <img
+              src="./../assets/images/img5.jpg"
+              alt="Une image"
+              width="50"
+              height="50"
+            />
+          </div>
+
+          <div class="ex-card-text ex-mt-5">
+            <h5 class="ex-h5 ex-text-center">Transformation</h5>
+            <p class="ex-text-justify ex-mt-5 ex-text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+              nulla illo. Voluptate odio eum veniam, impedit deserunt voluptatem
+              nihil inventore ullam nesciunt recusandae ad alias? Ex beatae eum
+              repellendus assumenda.
+            </p>
+            <div class="ex-d-block ex-text-center ex-mt-5">
+              <a href="#" class="ex-btn">Lire plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--Service slide-->
 
 <section class="ex-service-slide">
-    <div class="ex-container">
-        <div class="ex-row" data-aos="fade-up" data-aos-delay="200">
-            <div class="ex-col-12">
-                <h2 class="ex-h2">Services en carousel</h2>
-            </div>
-        </div>
-
-        <div class="ex-row ex-mt-5" data-aos="fade-up" data-aos-delay="300">
-            <div class="ex-col-12">
-                <owl-carousel-o [options]="customOptions" class="ex-carousel">
-                    <ng-template carouselSlide class="ex-carousel-item">
-                        <div class="ex-carousel-card slide">
-                            <img src="./../assets/images/img4.jpg" class="ex-img-fluid" alt="Une image">
-
-                            <div class="ex-carousel-description">
-                                <h2 class="ex-h2">Un titre</h2>
-                                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas, itaque
-                                    exercitationem soluta at aspernatur magni excepturi quia esse quasi earum voluptas
-                                    reiciendis facilis aperiam! Nesciunt at aliquam nobis praesentium?
-                                </p>
-                            </div>
-
-                            <div class="ex-carousel-title">
-                                <small>Developpement</small>
-                                <h3>
-                                    <a href="#">
-                                        <small>Logiciels de qualite</small>
-                                        <i class="fa fa-angle-right ex-carousel-icon"></i>
-                                    </a>
-
-                                </h3>
-                            </div>
-                        </div>
-                    </ng-template>
-
-                    <ng-template carouselSlide class="ex-carousel-item">
-                        <div class="ex-carousel-card slide">
-                            <img src="./../assets/images/img1.jpeg" class="ex-img-fluid" alt="Une image">
-
-                            <div class="ex-carousel-description">
-                                <h2 class="ex-h2">Un titre</h2>
-                                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas, itaque
-                                    exercitationem soluta at aspernatur magni excepturi quia esse quasi earum voluptas
-                                    reiciendis facilis aperiam! Nesciunt at aliquam nobis praesentium?
-                                </p>
-                            </div>
-
-                            <div class="ex-carousel-title">
-                                <small>IA</small>
-                                <h3>
-                                    <a href="#">
-                                        <small>Une equipe de specialiste</small>
-                                        <i class="fa fa-angle-right ex-carousel-icon"></i>
-                                    </a>
-
-                                </h3>
-                            </div>
-                        </div>
-                    </ng-template>
-
-                    <ng-template carouselSlide class="ex-carousel-item">
-                        <div class="ex-carousel-card slide">
-                            <img src="./../assets/images/img2.jpg" class="ex-img-fluid" alt="Une image">
-
-                            <div class="ex-carousel-description">
-                                <h2 class="ex-h2">Un titre</h2>
-                                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas, itaque
-                                    exercitationem soluta at aspernatur magni excepturi quia esse quasi earum voluptas
-                                    reiciendis facilis aperiam! Nesciunt at aliquam nobis praesentium?
-                                </p>
-                            </div>
-
-                            <div class="ex-carousel-title">
-                                <small>Marketing</small>
-                                <h3>
-                                    <a href="#">
-                                        <small>Un bon marketing digital</small>
-                                        <i class="fa fa-angle-right ex-carousel-icon"></i>
-                                    </a>
-
-                                </h3>
-                            </div>
-                        </div>
-                    </ng-template>
-
-                    <ng-template carouselSlide class="ex-carousel-item">
-                        <div class="ex-carousel-card slide">
-                            <img src="./../assets/images/img5.jpg" class="ex-img-fluid" alt="Une image">
-
-                            <div class="ex-carousel-description">
-                                <h2 class="ex-h2">Un titre</h2>
-                                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas, itaque
-                                    exercitationem soluta at aspernatur magni excepturi quia esse quasi earum voluptas
-                                    reiciendis facilis aperiam! Nesciunt at aliquam nobis praesentium?
-                                </p>
-                            </div>
-
-                            <div class="ex-carousel-title">
-                                <small>Coworking</small>
-                                <h3>
-                                    <a href="#">
-                                        <small>Un bon espace de travail</small>
-                                        <i class="fa fa-angle-right ex-carousel-icon"></i>
-                                    </a>
-
-                                </h3>
-                            </div>
-                        </div>
-                    </ng-template>
-                </owl-carousel-o>
-            </div>
-        </div>
+  <div class="ex-container">
+    <div class="ex-row" data-aos="fade-up" data-aos-delay="200">
+      <div class="ex-col-12">
+        <h2 class="ex-h2">Services en carousel</h2>
+      </div>
     </div>
+
+    <div class="ex-row ex-mt-5" data-aos="fade-up" data-aos-delay="300">
+      <div class="ex-col-12">
+        <owl-carousel-o [options]="customOptions" class="ex-carousel">
+          <ng-template carouselSlide class="ex-carousel-item">
+            <div class="ex-carousel-card slide">
+              <img
+                src="./../assets/images/img4.jpg"
+                class="ex-img-fluid"
+                alt="Une image"
+              />
+
+              <div class="ex-carousel-description">
+                <h2 class="ex-h2">Un titre</h2>
+                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt quas, itaque exercitationem soluta at aspernatur
+                  magni excepturi quia esse quasi earum voluptas reiciendis
+                  facilis aperiam! Nesciunt at aliquam nobis praesentium?
+                </p>
+              </div>
+
+              <div class="ex-carousel-title">
+                <small>Developpement</small>
+                <h3>
+                  <a href="#">
+                    <small>Logiciels de qualite</small>
+                    <i class="fa fa-angle-right ex-carousel-icon"></i>
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide class="ex-carousel-item">
+            <div class="ex-carousel-card slide">
+              <img
+                src="./../assets/images/img1.jpeg"
+                class="ex-img-fluid"
+                alt="Une image"
+              />
+
+              <div class="ex-carousel-description">
+                <h2 class="ex-h2">Un titre</h2>
+                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt quas, itaque exercitationem soluta at aspernatur
+                  magni excepturi quia esse quasi earum voluptas reiciendis
+                  facilis aperiam! Nesciunt at aliquam nobis praesentium?
+                </p>
+              </div>
+
+              <div class="ex-carousel-title">
+                <small>IA</small>
+                <h3>
+                  <a href="#">
+                    <small>Une equipe de specialiste</small>
+                    <i class="fa fa-angle-right ex-carousel-icon"></i>
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide class="ex-carousel-item">
+            <div class="ex-carousel-card slide">
+              <img
+                src="./../assets/images/img2.jpg"
+                class="ex-img-fluid"
+                alt="Une image"
+              />
+
+              <div class="ex-carousel-description">
+                <h2 class="ex-h2">Un titre</h2>
+                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt quas, itaque exercitationem soluta at aspernatur
+                  magni excepturi quia esse quasi earum voluptas reiciendis
+                  facilis aperiam! Nesciunt at aliquam nobis praesentium?
+                </p>
+              </div>
+
+              <div class="ex-carousel-title">
+                <small>Marketing</small>
+                <h3>
+                  <a href="#">
+                    <small>Un bon marketing digital</small>
+                    <i class="fa fa-angle-right ex-carousel-icon"></i>
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide class="ex-carousel-item">
+            <div class="ex-carousel-card slide">
+              <img
+                src="./../assets/images/img5.jpg"
+                class="ex-img-fluid"
+                alt="Une image"
+              />
+
+              <div class="ex-carousel-description">
+                <h2 class="ex-h2">Un titre</h2>
+                <p class="ex-text-small ex-text-justify ex-text-light ex-mt-5">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt quas, itaque exercitationem soluta at aspernatur
+                  magni excepturi quia esse quasi earum voluptas reiciendis
+                  facilis aperiam! Nesciunt at aliquam nobis praesentium?
+                </p>
+              </div>
+
+              <div class="ex-carousel-title">
+                <small>Coworking</small>
+                <h3>
+                  <a href="#">
+                    <small>Un bon espace de travail</small>
+                    <i class="fa fa-angle-right ex-carousel-icon"></i>
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--Section industry-->
 
 <section class="ex-industry" id="ex-product">
-    <div class="ex-container">
-        <h2 class="ex-h2 ex-text-center ex-text-primary" data-aos="fade-up" data-aos-delay="100">Industry</h2>
+  <div class="ex-container">
+    <h2
+      class="ex-h2 ex-text-center ex-text-primary"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      Industry
+    </h2>
 
-        <div class="ex-btn-list" data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="ex-btn ex-btn-primary active">Manufacturing</a>
-            <a href="#" class="ex-btn ex-btn-primary">Health care</a>
-            <a href="#" class="ex-btn ex-btn-primary">Pharmaceutical</a>
-            <a href="#" class="ex-btn ex-btn-primary">Governemental</a>
+    <div class="ex-btn-list" data-aos="fade-up" data-aos-delay="200">
+      <a href="#" class="ex-btn ex-btn-primary active">Manufacturing</a>
+      <a href="#" class="ex-btn ex-btn-primary">Health care</a>
+      <a href="#" class="ex-btn ex-btn-primary">Pharmaceutical</a>
+      <a href="#" class="ex-btn ex-btn-primary">Governemental</a>
+    </div>
+
+    <div class="ex-row ex-mt-5">
+      <div class="ex-col-12" data-aos="fade-up" data-aos-delay="350">
+        <h2 class="ex-h2">Manufacturing</h2>
+
+        <p class="ex-text-light ex-mt-3 ex-text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          aliquid possimus saepe deserunt vero ut dolor tempora eaque.
+          Quibusdam, architecto nobis officia ullam laborum cupiditate vero
+          neque id sunt voluptas? Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Sequi tempore fuga laboriosam eaque debitis quisquam
+          id dolor, expedita voluptate rem soluta voluptatibus! Aperiam possimus
+          reprehenderit, repellat porro maxime iure unde?
+        </p>
+
+        <p class="ex-text-light ex-mt-3 ex-text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          aliquid possimus saepe deserunt vero ut dolor tempora eaque.
+          Quibusdam, architecto nobis officia ullam laborum cupiditate vero
+          neque id sunt voluptas? Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Sequi tempore fuga laboriosam eaque debitis quisquam
+          id dolor, expedita voluptate rem soluta voluptatibus! Aperiam possimus
+          reprehenderit, repellat porro maxime iure unde?
+        </p>
+
+        <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">
+          Developpement et integration technologique
+        </h5>
+
+        <p class="ex-text-light ex-text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+          excepturi voluptas ad Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eligendi sit voluptas temporibus quo odit eaque et
+          commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum
+          repudiandae expedita laboriosam non.
+        </p>
+
+        <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">
+          Developpement et integration technologique
+        </h5>
+
+        <p class="ex-text-light ex-text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque
+          excepturi voluptas ad Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eligendi sit voluptas temporibus quo odit eaque et
+          commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum
+          repudiandae expedita laboriosam non.
+        </p>
+      </div>
+    </div>
+
+    <div class="ex-row ex-mt-5">
+      <div class="ex-col-12 ex-gallery">
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img10.jpg" alt="Image 1" />
         </div>
-
-        <div class="ex-row ex-mt-5">
-            <div class="ex-col-12" data-aos="fade-up" data-aos-delay="350">
-                <h2 class="ex-h2">Manufacturing</h2>
-
-                <p class="ex-text-light ex-mt-3 ex-text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid possimus saepe deserunt
-                    vero ut dolor tempora eaque. Quibusdam, architecto nobis officia ullam laborum cupiditate vero neque
-                    id sunt voluptas?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore fuga laboriosam eaque
-                    debitis quisquam id dolor, expedita voluptate rem soluta voluptatibus! Aperiam possimus
-                    reprehenderit, repellat porro maxime iure unde?
-                </p>
-
-                <p class="ex-text-light ex-mt-3 ex-text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt aliquid possimus saepe deserunt
-                    vero ut dolor tempora eaque. Quibusdam, architecto nobis officia ullam laborum cupiditate vero neque
-                    id sunt voluptas?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore fuga laboriosam eaque
-                    debitis quisquam id dolor, expedita voluptate rem soluta voluptatibus! Aperiam possimus
-                    reprehenderit, repellat porro maxime iure unde?
-                </p>
-
-                <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">Developpement et integration technologique
-                </h5>
-
-                <p class="ex-text-light ex-text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit voluptas temporibus quo odit
-                    eaque et commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum repudiandae expedita
-                    laboriosam non.
-                </p>
-
-                <h5 class="ex-h5 ex-mt-5 ex-start-disc ex-color-secondary">Developpement et integration technologique
-                </h5>
-
-                <p class="ex-text-light ex-text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eum eaque excepturi voluptas ad
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit voluptas temporibus quo odit
-                    eaque et commodi est illo? Illum optio nisi unde nostrum nesciunt dolorum repudiandae expedita
-                    laboriosam non.
-                </p>
-            </div>
-        </div>
-
-        <div class="ex-row ex-mt-5">
-            <div class="ex-col-12 ex-gallery">
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img10.jpg" alt="Image 1">
-                </div>
-                <!--  <div class="ex-gallery-element">
+        <!--  <div class="ex-gallery-element">
                     <img src="./../assets/images/img1.jpeg" alt="Image 1">
                 </div> -->
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img4.jpg" alt="Image 2">
-                </div>
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img5.jpg" alt="Image 3">
-                </div>
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img6.jpg" alt="Image 4">
-                </div>
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img7.jpg" alt="Image 5">
-                </div>
-                <div class="ex-gallery-element">
-                    <img src="./../assets/images/img9.jpg" alt="Image 6">
-                </div>
-            </div>
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img4.jpg" alt="Image 2" />
         </div>
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img5.jpg" alt="Image 3" />
+        </div>
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img6.jpg" alt="Image 4" />
+        </div>
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img7.jpg" alt="Image 5" />
+        </div>
+        <div class="ex-gallery-element">
+          <img src="./../assets/images/img9.jpg" alt="Image 6" />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!--Footer-->
 
-<footer class="ex-footer ex-bg-primary" id="ex-contact">
-    <div class="ex-container">
-        <div class="ex-row ex-mt-5">
-            <div class="ex-col-3 ex-description" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="h2">Logo ici</h2>
-                <p class="ex-description-text ex-text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, nesciunt? Labore aspernatur facere
-                    autem. Veniam perferendis fugiat quaerat libero soluta enim.
-                </p>
-            </div>
-            <div class="ex-col-2 ex-about" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="ex-h2 ex-text-uppercase">About exodia</h2>
-                <ul class="ex-list">
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">compagny</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">compagny</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">compagny</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">compagny</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ex-col-3" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="ex-h2 ex-text-uppercase">Services</h2>
-                <ul class="ex-list">
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">Developpement dans la tech et bien
-                            d'autres</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ex-col-2" data-aos="fade-up" data-aos-delay="400">
-                <h2 class="ex-h2 ex-text-uppercase">Informations</h2>
-                <ul class="ex-list">
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">carrer</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">other</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ex-col-2" data-aos="fade-up" data-aos-delay="500">
-                <h2 class="ex-h2 ex-text-uppercase">Contact us</h2>
-                <ul class="ex-list">
-                    <li>
-                        <a href="#" class="ex-list-item">takamrushclin@gmail.com</a>
-                    </li>
-                    <li>
-                        <a href="#" class="ex-list-item ex-text-uppercase">Hello world</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="ex-container">
-        <div class="ex-row">
-            <div class="ex-col-6">
-                <p class="ex-copyright">
-                    Copyright &copy; 2022. All right reserved
-                </p>
-            </div>
-            <div class="ex-col-6">
-                <ul class="ex-list-social">
-                    <li>
-                        <a href="#" class="ex-list-item-social">
-                            <i class="fab fa-facebook ex-icon"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="ex-list-item-social">
-                            <i class="fab fa-linkedin ex-icon"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="ex-list-item-social">
-                            <i class="fab fa-twitter ex-icon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="ex-bg-secondary ex-mt-5"></div>
-</footer>
+<app-footer></app-footer>
