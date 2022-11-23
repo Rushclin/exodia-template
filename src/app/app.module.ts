@@ -14,6 +14,8 @@ import { ManufacturationComponent } from './components/manufacturation/manufactu
 import { HomeComponent } from './screen/home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ManufacturingComponent } from './screen/manufacturing/manufacturing.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     HeroComponent,
     AboutComponent,
+    ManufacturingComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    TabsModule
+    TabsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

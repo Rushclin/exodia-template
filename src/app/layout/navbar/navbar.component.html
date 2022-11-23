@@ -3,14 +3,14 @@
       <div class="row">
           <div class="col-12">
               <nav class="main-nav">
-                  <a href="#" class="logo">Exsodia</a>
+                  <a routerLink="/" class="logo">Exsodia</a>
                   <ul class="nav" [ngStyle]="{display: toggle_nav ? 'block' : ''}" >
-                      <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#welcome" class="active">Acceuil</a></li>
+                      <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#welcome" routerLinkActive="active">Acceuil</a></li>
                       <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#about">A propos</a></li>
                       <li class="submenu">
                         <a href="javascript:;" (click)="toggle_dopdown_fn()">Services</a>
                         <ul ngClass="{{toggle_dropdown && 'active'}}">
-                            <li><a (click)="toggle_dopdown_fn()" href="">Manufacturation</a></li>
+                            <li><a (click)="toggle_dopdown_fn()" href="/manufacturing">Manufacturation</a></li>
                             <li><a (click)="toggle_dopdown_fn()" href="">E-sante</a></li>
                             <li><a (click)="toggle_dopdown_fn()" href="">Gestion de projet</a></li>
                         </ul>
