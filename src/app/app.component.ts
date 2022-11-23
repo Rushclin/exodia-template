@@ -5,12 +5,23 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./../styles.scss']
+  styleUrls: ['./app.component.scss',]
 })
 export class AppComponent{
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
   title = 'exsodia-template';
+
+  toggle_nav = false;
+  toggle_dropdown = false
+
+  toggle_nav_fn = () => {
+    this.toggle_nav = !this.toggle_nav
+  }
+  toggle_dopdown_fn = () => {
+    this.toggle_dropdown = !this.toggle_dropdown
+  }
+
 
   toggle = false
   windowScrolled!: boolean;
