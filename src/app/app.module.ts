@@ -10,6 +10,10 @@ import { TabsModule } from './layout/tabs';
 import { ScroolComponent } from './layout/scrool/scrool.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ServiceComponent } from './components/service/service.component';
+import { ManufacturationComponent } from './components/manufacturation/manufacturation.component';
+import { HomeComponent } from './screen/home/home.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { ServiceComponent } from './components/service/service.component';
     ScroolComponent,
     ServicesComponent,
     ServiceComponent,
+    ManufacturationComponent,
+    HomeComponent,
+    HeroComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

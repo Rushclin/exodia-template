@@ -1,37 +1,29 @@
-<header class="ex-header ex-bg-secondary" ngClass="{{toggle && 'active'}}">
+<header class="header-area header-sticky">
   <div class="ex-container">
-      <!--Logo-->
-      <h2 class="h2">
-          <a href="#" class="ex-logo">Exsodia</a>
-      </h2>
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <a href="#" class="logo">Exsodia</a>
+                  <ul class="nav" [ngStyle]="{display: toggle_nav ? 'block' : ''}" >
+                      <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#welcome" class="active">Acceuil</a></li>
+                      <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#about">A propos</a></li>
+                      <li class="submenu">
+                        <a href="javascript:;" (click)="toggle_dopdown_fn()">Services</a>
+                        <ul ngClass="{{toggle_dropdown && 'active'}}">
+                            <li><a (click)="toggle_dopdown_fn()" href="">Manufacturation</a></li>
+                            <li><a (click)="toggle_dopdown_fn()" href="">E-sante</a></li>
+                            <li><a (click)="toggle_dopdown_fn()" href="">Gestion de projet</a></li>
+                        </ul>
+                      </li>
 
-      <!--Toggle button for mobile view-->
-      <button class="ex-toggle-btn" (click)="ex_toggle_nav()">
-          <div class="ex-hamburger">
-              <span class="ex-bar"></span>
-              <span class="ex-bar"></span>
-              <span class="ex-bar"></span>
+                      <li class="scroll-to-section"><a (click)="toggle_nav_fn()" href="#contact-us">Nous contacter</a></li>
+                  </ul>
+                  <a class='menu-trigger' ngClass="{{ toggle_nav && 'active'}}" (click)="toggle_nav_fn()">
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
           </div>
-      </button>
-
-      <!--navbar-->
-      <nav class="ex-navbar">
-          <div class="ex-container">
-              <ul class="ex-navbar-list">
-                  <li>
-                      <a href="#ex-about" class="ex-navbar-link active" (click)="ex_toggle_nav()">A propos</a>
-                  </li>
-                  <li>
-                      <a href="#ex-service" class="ex-navbar-link" (click)="ex_toggle_nav()">services</a>
-                  </li>
-                  <li>
-                      <a href="#ex-product" class="ex-navbar-link" (click)="ex_toggle_nav()">product</a>
-                  </li>
-                  <li>
-                      <a href="#ex-contact" class="ex-navbar-link" (click)="ex_toggle_nav()">contacts</a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
+      </div>
   </div>
 </header>

@@ -12,16 +12,6 @@ export class AppComponent{
   constructor(@Inject(DOCUMENT) private document: Document) {}
   title = 'exsodia-template';
 
-  toggle_nav = false;
-  toggle_dropdown = false
-
-  toggle_nav_fn = () => {
-    this.toggle_nav = !this.toggle_nav
-  }
-  toggle_dopdown_fn = () => {
-    this.toggle_dropdown = !this.toggle_dropdown
-  }
-
 
   toggle = false
   windowScrolled!: boolean;
@@ -70,9 +60,6 @@ scrollToTop() {
       1000: {
         items: 3
       },
-     /*  1000: {
-        items: 4
-      } */
     },
     nav: false
   }
